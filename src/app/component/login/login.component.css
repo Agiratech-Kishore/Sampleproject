@@ -1,0 +1,65 @@
+/* Container holding the form to center it on the page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  
+  form {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't increase the size of the inputs */
+  }
+  
+  button[type="submit"],
+  button {
+    background-color: #4CAF50; /* A nice green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover,
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for the "Sign Up" button to differentiate it from the login button */
+  button:not([type="submit"]) {
+    background-color: #1a73e8; /* A different color to stand out */
+    margin-top: 20px; /* More space from the login button */
+  }
+  
+  /* Adding a bit of responsiveness */
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+    }
+  }
+  
